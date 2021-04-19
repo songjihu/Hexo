@@ -1,9 +1,9 @@
 # site name
-prefixName: さくら荘その
+prefixName: SONGJH'S # さくら荘その
 siteName: 胡莱峦镐
 # favicon and site master avatar
 favicon: http://songjihu.top:8099/favicon.ico
-avatar: /Avatar/avatar1_640.jpg
+avatar: /Avatar/avatar.jpg
 url: http://songjihu.top
 description: 放弃幻想 准备战斗
 cdn: http://songjihu.top:8099
@@ -12,17 +12,17 @@ pjax: 1
 mathjax: 0
 
 # 公告
-notice: 封面图来自May爷群友的分享，侵删
+notice: 网站正在逐步建设完全中。另：封面来自May爷群友的分享，侵删
 lazyloadImg: http://songjihu.top:8099/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
-    技术: {path: /categories/技术/, fa: fa-code }, 
-    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
-    随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
+    UE4: {path: /categories/UE4/, fa:  }, 
+    Unity: {path: /categories/Unity/, fa:  }, 
+    图形学: {path: /categories/图形学/, fa:  },
+    资源: {path: /categories/资源/, fa:  }, 
+    转载: {path: /categories/转载/, fa:  }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
@@ -50,9 +50,9 @@ homeArticleShown: 10
 bg:
   - http://songjihu.top:8099/Cover/c2.jpg #1
   - http://songjihu.top:8099/Cover/c3.jpg #2
-  - http://songjihu.top:8099/Cover/c10.png #3
+   #3
   - http://songjihu.top:8099/Cover/c5.jpg #4
-  - http://songjihu.top:8099/Cover/c11.png #5
+   #5
   - http://songjihu.top:8099/Cover/c7.jpg #6
   - http://songjihu.top:8099/Cover/c8.jpg #7
   - http://songjihu.top:8099/Cover/c9.jpg #8
@@ -74,12 +74,12 @@ siteBuildingTime: 04/17/2021
 #social  url, img PC端配置
 social:
   github: {url: http://github.com/songjihu, img: /icon/Logo GitHub.png}
-  sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
-  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
-  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
-  email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
-  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  # sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
+  # wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
+  # zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
+  # email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
+  # wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  # wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:
@@ -88,10 +88,10 @@ msocial:
   qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 donate:
-  paypal: https://www.paypal.me/hojuncn
-  alipay: /img/custom/donate/AliPayQR.jpg
-  wechat: /img/custom/donate/WeChanQR.jpg
-  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+  paypal: # https://www.paypal.me/hojuncn
+  alipay: /img/custom/donate/AliPayQR.png
+  wechat: /img/custom/donate/WeChanQR.png
+  wechatSQ: /img/custom/donate/WeChanSQ.png
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
