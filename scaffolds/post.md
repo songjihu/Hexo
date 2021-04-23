@@ -2,8 +2,8 @@
 title: {{ title }}
 date: {{ date }}
 author: songjihu
-avatar: http://songjihu.top:8099/Avatar/avatar.jpg
-authorLink: http://songjihu.top
+avatar: http://82.156.182.226:8099/Avatar/avatar.jpg
+authorLink: http://82.156.182.226
 authorAbout: # 一个好奇的人
 authorDesc: # 一个好奇的人
 categories: 技术

@@ -2,18 +2,18 @@
 prefixName: SONGJH'S # さくら荘その
 siteName: 胡莱峦镐
 # favicon and site master avatar
-favicon: http://songjihu.top:8099/favicon.ico
+favicon: http://82.156.182.226:8099/favicon.ico
 avatar: /Avatar/avatar.jpg
-url: http://songjihu.top
+url: http://82.156.182.226
 description: 放弃幻想 准备战斗
-cdn: http://songjihu.top:8099
+cdn: http://82.156.182.226:8099
 pjax: 1
 # 1开启
 mathjax: 0
 
 # 公告
 notice: 网站正在逐步建设完全中。另：封面来自May爷群友的分享，侵删
-lazyloadImg: http://songjihu.top:8099/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: http://82.156.182.226:8099/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
@@ -48,14 +48,14 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - http://songjihu.top:8099/Cover/c2.jpg #1
-  - http://songjihu.top:8099/Cover/c3.jpg #2
+  - http://82.156.182.226:8099/Cover/c2.jpg #1
+  - http://82.156.182.226:8099/Cover/c3.jpg #2
    #3
-  - http://songjihu.top:8099/Cover/c5.jpg #4
+  - http://82.156.182.226:8099/Cover/c5.jpg #4
    #5
-  - http://songjihu.top:8099/Cover/c7.jpg #6
-  - http://songjihu.top:8099/Cover/c8.jpg #7
-  - http://songjihu.top:8099/Cover/c9.jpg #8
+  - http://82.156.182.226:8099/Cover/c7.jpg #6
+  - http://82.156.182.226:8099/Cover/c8.jpg #7
+  - http://82.156.182.226:8099/Cover/c9.jpg #8
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
