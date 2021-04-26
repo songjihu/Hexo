@@ -35,7 +35,7 @@ UE4版本：4.26.2
 Specluar设为0.5参加计算。
 
 WetMask单独作为Roughness和Specular进行Lerp时的Alpha控制混合的程度；Porousness与WetMask相乘后并Saturate后，控制积水造成的增加饱和度和变暗效果的程度。
-### 效果图
+### 效果
 
 <div align="center">
 <img src="http://82.156.182.226:8099/img/my/QQ截图20210419173357.jpg" width="70%" height="70%" >
@@ -59,11 +59,12 @@ Rain Drops雨滴效果实现
 <div align="center">
 <img src="http://82.156.182.226:8099/img/my/QQ截图20210423182801.jpg" width="50%" height="50%" >
 </div>
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=1-%5Cleft(x%5Cright)%5E%7B0.1%7D"></div>
+<div align="center"><img style="background: white;" src="http://82.156.182.226:8099/img/my/SRfN3wA2ds.svg"></div>
  
-<!-- $$
+<!-- <!-- $$
 1-\left(x\right)^{0.1}
 $$ --> 
+
 
 
 ### 1. 法线
@@ -104,7 +105,7 @@ $$ -->
 </div>
 <br>
 
-### 4. 效果图
+### 4. 效果
 <div align="center">
 <img src="http://82.156.182.226:8099/img/my/QQ录屏2021042320471020214232047541.gif
 " width="50%" height="50%" >
@@ -192,5 +193,13 @@ offset取到后，与R通道的渐变值相加，实现一个循环出现的渐�
 <br>
 
 ### 3. 效果
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ录屏2021042619294220214261931223.gif
+" width="50%">
+</div>
+<br>
 
-QQ录屏2021042619294220214261931223.gif
+## Rain Puddle Shader
+本节实现了坑洼积水的效果
+
+### 整体思路
