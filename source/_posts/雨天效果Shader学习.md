@@ -203,3 +203,87 @@ offset取到后，与R通道的渐变值相加，实现一个循环出现的渐�
 本节实现了坑洼积水的效果
 
 ### 整体思路
+1. 使用噪声纹理，通过世界坐标采样后，截断到某一范围，使这一区域为1，其他区域为0，作为水坑的Mask。
+2. 在遮罩为1的水坑中，实现了涟漪效果和水波效果的叠加（Add函数，2者并不互斥），其中2个效果也分别调用了制作好的材质函数。
+3. 这里使用的水波效果实现，使用了一张水波Normal纹理的2次采样（不同的缩放），混合后乘以风的强度Scaler作为整体的强度。
+4. 本节贴图[distortion.tga](http://82.156.182.226:8099/img/my/distortion.tga)
+
+### 1. 遮罩
+这里的遮罩使用1表示水坑出现的区域。首先用世界坐标做一个缩放后作为UV，得到的G通道值先减去一个小数，再除以一个非常小的小数，在Saturate到0-1范围里。其次还要计算世界法线向上的遮罩。2者相乘得到最终的Mask。
+另：原作者的Lerp然后Mask得到的2个数字，后边可以使用参数控制水坑的范围。
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ截图20210428172601.jpg
+" width="90%">
+</div>
+<br>
+
+### 2. 法线
+法线的计算就是混合了水波和涟漪的法线，再与最终原本物体的法线混合（例子中使用(0,0,1)暂时代指一个向上的平面）。
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ截图20210428173415.jpg
+" width="80%">
+</div>
+<br>
+
+### 3. 效果
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ录屏2021042817401320214281740381.gif
+" width="50%">
+</div>
+<br>
+
+## Complete Rain Shader
+本节混合了以上的效果，作为最终的雨天效果
+### 整体思路
+1. 对于一个已有材质，增加雨水覆盖的效果，需要增加的效果有：
+<br>
+Wet效果（Rain Wetness Shader）-> BaseColor, Specular, Roughness<br>
+雨滴效果（Rain Drops Shader）和水流效果（Rain Drips Shader） -> Normal(Lerp), Mask(Add)<br>
+水坑效果（Rain Puddles Shader） -> Normal, Mask<br>
+
+2. 后两者的结果混合时Mask取Max作为Wet效果的Mask（即，有雨滴/流水效果和积水效果的地方，都应该具有Wet效果）。混合时Normal取Lerp（Mask作为Alpha值）。
+
+### 1. 额外参数
+原作者额外引进了Roughness和Porousness（渗水程度）作为2个调控的参数
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ截图20210428184258.jpg
+" width="50%">
+</div>
+<br>
+
+### 2. 法线
+法线部分混合了3个之前做的效果，并与原来材质的Normal输入进行了混合
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ截图20210428184516.jpg
+" width="90%">
+</div>
+<br>
+
+### 3. 遮罩
+遮罩使用上一步中几个部分计算得出的Mask进行混合，作为最终Wet效果的Mask
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ截图20210428184723.jpg
+" width="90%">
+</div>
+<br>
+
+### 4. 实际使用
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/QQ截图20210428185017.jpg
+" width="80%">
+</div>
+<br>
+
+## 最终效果
+<font color=#999AAA>Sequencer，牌面！
+<div align="center">
+<img src="http://82.156.182.226:8099/img/my/Rain_final20214281852592.gif
+" width="100%">
+</div>
+<br>
+
+******
+
+## 结语
+以上内容仅作为总结回顾，更具体的步骤见开头视频处。<br>
+Tips: Rain Ripples Shader部分其实原作者在归纳进材质函数进行使用时，还多进行了一步混合，使多个涟漪可以互相重叠（比较复杂，以后再去总结归纳吧）<br>
