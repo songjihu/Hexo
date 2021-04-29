@@ -104,10 +104,21 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
-mathjax:
-  tags: none # or 'ams' or 'all'
-  single_dollars: true # enable single dollar signs as in-line math delimiters
-  cjk_width: 0.9 # relative CJK char width
-  normal_width: 0.6 # relative normal (monospace) width
-  append_css: true # add CSS to pages rendered by MathJax
-  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter
+
+## Live2D看板娘
+live2d:
+  enable: true
+  pluginModelPath: assets/
+  model:
+    #模板目录，在node_modules里
+    use: live2d-widget-model-shizuku  
+  display:
+    position: right
+    width: 300 
+    height: 600
+  mobile:
+    # 在手机端显示
+    show: false   
+  rect:
+    opacity:0.7
+

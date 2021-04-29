@@ -5,7 +5,7 @@ siteName: 胡莱峦镐
 favicon: http://82.156.182.226:8099/favicon.ico
 avatar: /Avatar/avatar.jpg
 url: http://82.156.182.226
-description: 放弃幻想 准备战斗
+description: The Winner Takes It All
 cdn: http://82.156.182.226:8099
 pjax: 1
 # 1开启
@@ -115,4 +115,49 @@ aplayer:
 valine: true
 v_appId: KypqgrkEt3w7iFwjG2xNSi0P-gzGzoHsz
 v_appKey: 0WdJ7Ru9vPt76HrSGYE21RM4
+
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+
+live2d:
+  enable: true #是否开启
+  scriptFrom: local #默认
+  pluginRootPath: live2dw/ #插件的站点上的根目录（相对路径）
+  pluginJsPath: lib/ #脚本文件的相对与插件跟目录路径
+  pluginModelPath: assets/ #模型文件对插件跟目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # jsdelivr CDN # unpkg CDN
+  # scriptFrom: unpkg
+  # unpkg CDN
+  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  
+  tagMode: false #标签模式，是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: true # 调试, 是否在控制台输出日志
+  model:
+    #scale: 1
+    #hHeadPos: 0.5
+    #vHeadPos: 0.618
+    use: live2d-widget-model-hijiki
+
+    #live2d-widget-model-shizuku
+    #live2d-widget-model-haru
+
+    # npm-module package name
+
+    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+    # 你的自定义 url
+  display:
+    #superSample: 2
+    position: left
+    width: 150
+    height: 300
+    #hOffset: 0
+    #vOffset: -20
+  mobile:
+    show: true
+    #scale: 0.5
+  #react:
+    #opacityDefault: 0.7
+    #opacityOnHover: 0.2
+
 
