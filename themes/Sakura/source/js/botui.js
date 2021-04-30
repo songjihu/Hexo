@@ -26,7 +26,7 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 Mashiro"
+            content: "这里是 武功高强的盲僧"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
@@ -65,7 +65,7 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于上海财经大学"
+                content: "目前就读于吉林大学"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,

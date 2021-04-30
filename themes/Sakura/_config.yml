@@ -1,5 +1,5 @@
 # site name
-prefixName: SONGJH'S # さくら荘その
+prefixName:  Blog # さくら荘その
 siteName: 胡莱峦镐
 # favicon and site master avatar
 favicon: http://82.156.182.226:8099/favicon.ico
@@ -21,7 +21,7 @@ menus:
     UE4: {path: /categories/UE4/, fa:  }, 
     Unity: {path: /categories/Unity/, fa:  }, 
     图形学: {path: /categories/图形学/, fa:  },
-    资源: {path: /categories/资源/, fa:  }, 
+    杂记: {path: /categories/杂记/, fa:  }, 
     转载: {path: /categories/转载/, fa:  }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
@@ -49,13 +49,13 @@ homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
   - http://82.156.182.226:8099/Cover/c2.jpg #1
-  - http://82.156.182.226:8099/Cover/c3.jpg #2
+  # - http://82.156.182.226:8099/Cover/c3.jpg #2
    #3
-  - http://82.156.182.226:8099/Cover/c5.jpg #4
+  # - http://82.156.182.226:8099/Cover/c5.jpg #4
    #5
-  - http://82.156.182.226:8099/Cover/c7.jpg #6
-  - http://82.156.182.226:8099/Cover/c8.jpg #7
-  - http://82.156.182.226:8099/Cover/c9.jpg #8
+  # - http://82.156.182.226:8099/Cover/c7.jpg #6
+  # - http://82.156.182.226:8099/Cover/c8.jpg #7
+  # - http://82.156.182.226:8099/Cover/c9.jpg #8
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
@@ -73,19 +73,19 @@ siteBuildingTime: 04/17/2021
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/songjihu, img: /icon/Logo GitHub.png}
+  github: {url: http://github.com/songjihu, img: /icon/github.svg}
   # sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
-  # wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
+  wangyiyun: {url: http://music.163.com/m/user/home?id=120362485, img: /icon/网易云音乐(1).svg}
   # zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
-  # email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  # wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
-  # wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  email: {url: mailto:275245802@qq.com, img: /icon/QQ邮箱.svg}
+  wechat: {url: /#, qrcode: /img/custom/QQ图片20210430082716.jpg, img: /icon/微信.svg}
+  wechat2: {url: /#, qrcode: /img/custom/QQ图片20210430082838.jpg, img: /icon/QQ.svg}
 
 #social  url, img 移动端配置
 msocial:
   github: {url: http://github.com/songjihu, fa: fa-github, color: 333}
-  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
-  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
+  # : {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
+  # qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 donate:
   paypal: # https://www.paypal.me/hojuncn
@@ -100,7 +100,7 @@ movies:
   name: # Unbroken.mp4
 
 aplayer: 
-  id: 2660651585
+  id: 6659011864
   server: netease
   type: playlist
   fixed: true
@@ -115,49 +115,3 @@ aplayer:
 valine: true
 v_appId: KypqgrkEt3w7iFwjG2xNSi0P-gzGzoHsz
 v_appKey: 0WdJ7Ru9vPt76HrSGYE21RM4
-
-# Live2D
-## https://github.com/EYHN/hexo-helper-live2d
-
-live2d:
-  enable: true #是否开启
-  scriptFrom: local #默认
-  pluginRootPath: live2dw/ #插件的站点上的根目录（相对路径）
-  pluginJsPath: lib/ #脚本文件的相对与插件跟目录路径
-  pluginModelPath: assets/ #模型文件对插件跟目录路径
-  # scriptFrom: jsdelivr # jsdelivr CDN
-  # jsdelivr CDN # unpkg CDN
-  # scriptFrom: unpkg
-  # unpkg CDN
-  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
-  
-  tagMode: false #标签模式，是否仅替换 live2d tag标签而非插入到所有页面中
-  debug: true # 调试, 是否在控制台输出日志
-  model:
-    #scale: 1
-    #hHeadPos: 0.5
-    #vHeadPos: 0.618
-    use: live2d-widget-model-hijiki
-
-    #live2d-widget-model-shizuku
-    #live2d-widget-model-haru
-
-    # npm-module package name
-
-    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
-    # 你的自定义 url
-  display:
-    #superSample: 2
-    position: left
-    width: 150
-    height: 300
-    #hOffset: 0
-    #vOffset: -20
-  mobile:
-    show: true
-    #scale: 0.5
-  #react:
-    #opacityDefault: 0.7
-    #opacityOnHover: 0.2
-
-

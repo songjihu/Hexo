@@ -4152,7 +4152,7 @@ li.feature-2 {
 }
 .wechatInner {
     width:121px;
-    height:121px;
+    height:auto;
     padding:10px;
     background:rgba(0,0,0,.4);
     top:40px;

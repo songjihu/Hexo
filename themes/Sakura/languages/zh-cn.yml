@@ -57,6 +57,34 @@ UE4:
     en: 材质 源码 效果实现
     # 封面图片
     img:  http://82.156.182.226:8099/img/banner/feed-4-26-release-unreal-1920x1080-676966357.jpg
+Unity:
+    # 中文标题
+    zh: Unity3D引擎学习 
+    # 英文标题
+    en: 材质 效果实现
+    # 封面图片
+    img:  http://82.156.182.226:8099/img/banner/img-d6212260-cdc5-490a-95a3-625059d78552.jfif
+图形学:
+    # 中文标题
+    zh: 计算机图形学基础 
+    # 英文标题
+    en: 数学 渲染 美术
+    # 封面图片
+    img:  http://82.156.182.226:8099/img/banner/feed-4-26-release-unreal-1920x1080-676966357.jpg
+杂记:
+    # 中文标题
+    zh: 一些课余爱好
+    # 英文标题
+    en: Ubuntu 树莓派 平时遇到的各种问题 
+    # 封面图片
+    img:  http://82.156.182.226:8099/img/banner/4-26-water-1920x548-v2-1920x548-674169794.jpg
+转载:
+    # 中文标题
+    zh: 虚幻4引擎学习 
+    # 英文标题
+    en: 材质 源码 效果实现
+    # 封面图片
+    img:  http://82.156.182.226:8099/img/banner/feed-4-26-release-unreal-1920x1080-676966357.jpg
 
 #tag
 悦读:
