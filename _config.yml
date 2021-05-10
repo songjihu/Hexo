@@ -107,15 +107,15 @@ feed:
 
 ## Live2D看板娘
 live2d:
-  enable: true
+  enable: false
   pluginModelPath: assets/
   model:
     #模板目录，在node_modules里
     use: live2d-widget-model-shizuku  
   display:
-    position: right
-    width: 300 
-    height: 600
+    position: left
+    width: 30
+    height: 60
   mobile:
     # 在手机端显示
     show: false   

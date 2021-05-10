@@ -49,12 +49,12 @@ homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
   - http://82.156.182.226:8099/Cover/c2.jpg #1
-  # - http://82.156.182.226:8099/Cover/c3.jpg #2
+  - http://82.156.182.226:8099/Cover/c3.jpg #2
    #3
-  # - http://82.156.182.226:8099/Cover/c5.jpg #4
+  - http://82.156.182.226:8099/Cover/c5.jpg #4
    #5
-  # - http://82.156.182.226:8099/Cover/c7.jpg #6
-  # - http://82.156.182.226:8099/Cover/c8.jpg #7
+  - http://82.156.182.226:8099/Cover/c7.jpg #6
+  - http://82.156.182.226:8099/Cover/c8.jpg #7
   # - http://82.156.182.226:8099/Cover/c9.jpg #8
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
