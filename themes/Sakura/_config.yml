@@ -21,6 +21,7 @@ menus:
     UE4: {path: /categories/UE4/, fa:  }, 
     Unity: {path: /categories/Unity/, fa:  }, 
     图形学: {path: /categories/图形学/, fa:  },
+    百人计划: {path: /categories/百人计划/, fa:  },
     杂记: {path: /categories/杂记/, fa:  }, 
     转载: {path: /categories/转载/, fa:  }
   } }

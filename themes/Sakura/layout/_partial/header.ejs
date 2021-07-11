@@ -35,7 +35,7 @@
                   </span>
                 </a>
                 <% if (theme.menus[menu].submenus) { %>
-                  <ul class="sub-menu">
+                  <ul class="sub-menu" style="width: 200%">
                     <% for (var submenu in theme.menus[menu].submenus){ %>
                       <li>
                         <a href="<%- url_for(theme.menus[menu].submenus[submenu].path) %>">
