@@ -116,3 +116,6 @@ aplayer:
 valine: true
 v_appId: KypqgrkEt3w7iFwjG2xNSi0P-gzGzoHsz
 v_appKey: 0WdJ7Ru9vPt76HrSGYE21RM4
+
+# Latex
+mathjax: true
