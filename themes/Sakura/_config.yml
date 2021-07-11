@@ -62,9 +62,9 @@ bgclass: filter-dot
 
 # startdash url, title, desc img
 startdash: 
+  # - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
+  - {url: https://github.com/Videa-Lab-JLU, title: Videa Lab, desc: Videa Lab · Jilin University, img: /img/startdash/Videa1.png}
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
 
 
 
