@@ -7,9 +7,9 @@ avatar: /Avatar/avatar.jpg
 url: http://82.156.182.226
 description: The Winner Takes It All
 cdn: http://82.156.182.226:8099
-pjax: 1
+# pjax: 1
 # 1开启
-mathjax: 0
+# mathjax: 1
 
 # 公告
 notice: 网站正在逐步建设完全中。另：封面来自May爷群友的分享，侵删
